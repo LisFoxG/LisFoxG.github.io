@@ -78,17 +78,20 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .container{
-    margin: 30px  ;
-    height: 100%; 
+  width: 95%;
+  height: 95%;
+  margin: 20px 20px;
+  position: fixed;
 }
 
 body{
     background: rgb(236, 56, 122);
+   
 }
 
 .wrapper{
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
     background: rgb(230, 16, 98);
     border-radius: 25px;   
 }
@@ -101,16 +104,18 @@ body{
 }
 
 .tittle{
-    font-size: 33px;
+    font-size: 55px;
     text-align: center;
 }
 
 .subtitle{
     text-align: center;
+    font-size: 33px;
     margin: 10px 0 0 0;
 }
 
 .img-wrap{
+    
     display: flex;
     height: 80%;
     padding: 0 0 10px 0;
@@ -119,7 +124,7 @@ body{
 }
 
 .img{
-    
+   
     width: 100%;
     height: 100%;
     display: flex;
@@ -148,9 +153,9 @@ body{
 	top: 0;
 }
 
-.img-wrap {
+.img {
+  width: 100%;
 	display: flex;
-	width: calc(150px * 10);
 	animation: animate var(--t) linear infinite ;
 }
 
