@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+
+
+.container{
+    margin: 30px  ;
+    height: 100%; 
+}
+
+body{
+    background: rgb(236, 56, 122);
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background: rgb(230, 16, 98);
+    border-radius: 25px;   
+}
+
+.text{
+    font-size: 24px;
+    color: white;
+    padding: 40px 0 0 0;
+  
+}
+
+.tittle{
+    font-size: 33px;
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.img-wrap{
+    display: flex;
+    height: 80%;
+    padding: 0 0 10px 0;
+    align-items: center;
+    
+}
+
+.img{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img:before, .img:after {
+	content: "";
+	position: absolute;
+	height: 130px;
+	width: 150px; 
+	z-index: 2;
+}
+
+.img:after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+
+.img:before {
+	left: 0;
+	top: 0;
+}
+
+.img-wrap {
+	display: flex;
+	width: calc(150px * 10);
+	animation: animate var(--t) linear infinite ;
+}
+
+@keyframes  animate {
+	0% 
+  {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.img img{
+    border-radius: 10px;
+    height: 50%;
+  
+    margin: 8px;
+}
+
+
+
